@@ -1,9 +1,0 @@
-component,metric,value,unit,threshold,passed,message,timestamp,test_name,defect_type
-CPU,utilisation,37.84,%,85.0,True,CPU at 37.8% — within limit,1778520129.3379416,,
-RAM,available,11.49,GB,2.0,True,11.5 GB available — sufficient,1778520129.3379416,,
-Disk,free_space,198.39,GB,10.0,True,198.4 GB free on '/' — OK,1778520129.3389432,,
-Network,latency,44.1,ms,100.0,True,Latency 44.1 ms — acceptable,1778520129.3389432,,
-,,1007.7,MB/s,200.0,True,Throughput 1007.7 MB/s — meets 200.0 MB/s minimum,1778520129.4250996,sequential_throughput,none
-,,13423.0,IOPS,5000.0,True,13423 IOPS — meets 5000 minimum,1778520129.4250996,random_4k_iops,none
-,,1160.5,µs,500.0,False,Write latency 1161 µs — exceeds 500 µs (framework_issue),1778520129.4273489,write_latency,framework_issue
-,,0.0,status,1.0,False,smartctl not found — install smartmontools to enable SMART checks,1778520129.429507,smart_health,framework_issue

@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.coverage
+logs/
+reports/
+.venv/
