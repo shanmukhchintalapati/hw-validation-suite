@@ -2,7 +2,7 @@
 
 A production-style Python automation framework for hardware and SSD validation, built as a portfolio project demonstrating skills for the **Python + Networking Engineer** role.
 
-![CI](https://github.com/YOUR_USERNAME/hw-validation-suite/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/shanmukhchintalapati/hw-validation-suite/actions/workflows/ci.yml/badge.svg)
 
 ---
 
@@ -56,7 +56,7 @@ hw-validation-suite/
 ### Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/hw-validation-suite.git
+git clone https://github.com/shanmukhchintalapati/hw-validation-suite.git
 cd hw-validation-suite
 pip install -r requirements.txt
 ```
