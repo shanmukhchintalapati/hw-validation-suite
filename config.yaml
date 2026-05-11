@@ -1,0 +1,25 @@
+# hw-validation-suite — configuration
+# ------------------------------------
+# All thresholds are validated at runtime. See README.md for full docs.
+
+# CPU
+cpu_threshold_percent: 1.0        # fail if CPU utilisation exceeds this
+
+# Memory
+min_memory_available_gb: 2.0       # fail if available RAM drops below this
+
+# Disk
+min_disk_free_gb: 10.0             # fail if free disk space drops below this
+
+# Network
+max_network_latency_ms: 100.0      # fail if round-trip latency exceeds this
+
+# SSD / Storage
+min_sequential_throughput_mbs: 200.0   # minimum acceptable write throughput
+throughput_block_size_mb: 64           # block size used for throughput test
+min_random_iops: 5000                  # minimum random 4K IOPS
+max_write_latency_us: 500              # maximum acceptable write latency (µs)
+
+# Retry behaviour
+max_retries: 2                     # number of retries on transient failures
+retry_delay_seconds: 1             # seconds to wait between retries

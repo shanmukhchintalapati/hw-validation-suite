@@ -1,0 +1,622 @@
+2026-05-11T10:21:01 | WARNING  | src.framework_runner | Config file not found at 'C:\Users\shanm\AppData\Local\Temp\pytest-of-shanm\pytest-0\test_returns_defaults_when_no_0\nonexistent.yaml' — using defaults
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Config loaded from C:\Users\shanm\AppData\Local\Temp\pytest-of-shanm\pytest-0\test_user_values_override_defa0\config.yaml
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Config loaded from C:\Users\shanm\AppData\Local\Temp\pytest-of-shanm\pytest-0\test_bad_yaml_falls_back_to_de0\bad.yaml
+2026-05-11T10:21:01 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:01 | INFO     | src.framework_runner | HW-Validation-Suite starting
+2026-05-11T10:21:01 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Running HardwareMonitor (attempt 1)
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Running SSDValidator (attempt 1)
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Suite finished in 0.00 s | 8 passed | 0 failed
+2026-05-11T10:21:01 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:01 | INFO     | src.framework_runner | HW-Validation-Suite starting
+2026-05-11T10:21:01 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Running HardwareMonitor (attempt 1)
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Running SSDValidator (attempt 1)
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Suite finished in 0.00 s | 0 passed | 8 failed
+2026-05-11T10:21:01 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:01 | INFO     | src.framework_runner | HW-Validation-Suite starting
+2026-05-11T10:21:01 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Running HardwareMonitor (attempt 1)
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Running SSDValidator (attempt 1)
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Suite finished in 0.00 s | 8 passed | 0 failed
+2026-05-11T10:21:01 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:01 | INFO     | src.framework_runner | HW-Validation-Suite starting
+2026-05-11T10:21:01 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Running HardwareMonitor (attempt 1)
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Running SSDValidator (attempt 1)
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Suite finished in 0.00 s | 8 passed | 0 failed
+2026-05-11T10:21:01 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:01 | INFO     | src.framework_runner | HW-Validation-Suite starting
+2026-05-11T10:21:01 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Running HardwareMonitor (attempt 1)
+2026-05-11T10:21:01 | ERROR    | src.framework_runner | HardwareMonitor attempt 1 failed: transient error
+Traceback (most recent call last):
+  File "C:\Projects\hw_validation_project\hw-validation-suite\src\framework_runner.py", line 106, in _run_with_retry
+    return fn()
+           ^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1199, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\hw_validation_project\hw-validation-suite\tests\test_framework_runner.py", line 135, in flaky_run
+    raise RuntimeError("transient error")
+RuntimeError: transient error
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Retrying in 0 s…
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Running HardwareMonitor (attempt 2)
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Running SSDValidator (attempt 1)
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Suite finished in 0.01 s | 8 passed | 0 failed
+2026-05-11T10:21:01 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:01 | INFO     | src.framework_runner | HW-Validation-Suite starting
+2026-05-11T10:21:01 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Running HardwareMonitor (attempt 1)
+2026-05-11T10:21:01 | ERROR    | src.framework_runner | HardwareMonitor attempt 1 failed: always fails
+Traceback (most recent call last):
+  File "C:\Projects\hw_validation_project\hw-validation-suite\src\framework_runner.py", line 106, in _run_with_retry
+    return fn()
+           ^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1193, in _execute_mock_call
+    raise effect
+RuntimeError: always fails
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Retrying in 0 s…
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Running HardwareMonitor (attempt 2)
+2026-05-11T10:21:01 | ERROR    | src.framework_runner | HardwareMonitor attempt 2 failed: always fails
+Traceback (most recent call last):
+  File "C:\Projects\hw_validation_project\hw-validation-suite\src\framework_runner.py", line 106, in _run_with_retry
+    return fn()
+           ^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1193, in _execute_mock_call
+    raise effect
+  File "C:\Projects\hw_validation_project\hw-validation-suite\src\framework_runner.py", line 106, in _run_with_retry
+    return fn()
+           ^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1193, in _execute_mock_call
+    raise effect
+RuntimeError: always fails
+2026-05-11T10:21:01 | CRITICAL | src.framework_runner | HardwareMonitor exhausted all retries — skipping
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Running SSDValidator (attempt 1)
+2026-05-11T10:21:01 | INFO     | src.framework_runner | Suite finished in 0.00 s | 4 passed | 0 failed
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] CPU — CPU at 50.0% — within limit
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | WARNING  | src.hardware_monitor | [FAIL] CPU — CPU at 90.0% — exceeds 85.0% threshold
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | WARNING  | src.hardware_monitor | [FAIL] CPU — CPU at 85.0% — exceeds 85.0% threshold
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] CPU — CPU at 0.0% — within limit
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] CPU — CPU at 84.9% — within limit
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | WARNING  | src.hardware_monitor | [FAIL] CPU — CPU at 85.0% — exceeds 85.0% threshold
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | WARNING  | src.hardware_monitor | [FAIL] CPU — CPU at 100.0% — exceeds 85.0% threshold
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] RAM — 8.0 GB available — sufficient
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | WARNING  | src.hardware_monitor | [FAIL] RAM — Only 0.5 GB available — below 2.0 GB minimum
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | WARNING  | src.hardware_monitor | [FAIL] RAM — Only 0.0 GB available — below 2.0 GB minimum
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | WARNING  | src.hardware_monitor | [FAIL] RAM — Only 1.9 GB available — below 2.0 GB minimum
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] RAM — 2.0 GB available — sufficient
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] RAM — 16.0 GB available — sufficient
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] Disk — 198.4 GB free on '/' — OK
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | WARNING  | src.hardware_monitor | [FAIL] Disk — Only 2.0 GB free on '/' — below 10.0 GB
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] Network — Latency 20.0 ms — acceptable
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | WARNING  | src.hardware_monitor | [FAIL] Network — Latency 200.0 ms — exceeds 100.0 ms limit
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] Network — Latency 10.0 ms — acceptable
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] Network — Latency 99.9 ms — acceptable
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] Network — Latency 100.0 ms — acceptable
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | WARNING  | src.hardware_monitor | [FAIL] Network — Latency 100.1 ms — exceeds 100.0 ms limit
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | WARNING  | src.hardware_monitor | [FAIL] Network — Latency 500.0 ms — exceeds 100.0 ms limit
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | Starting full hardware validation sweep
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] CPU — CPU at 14.5% — within limit
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] RAM — 7.5 GB available — sufficient
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] Disk — 198.4 GB free on '/' — OK
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] Network — Latency 90.0 ms — acceptable
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | Validation complete: 4/4 checks passed
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | Starting full hardware validation sweep
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] CPU — CPU at 29.0% — within limit
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] RAM — 15.7 GB available — sufficient
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] Disk — 198.4 GB free on '/' — OK
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] Network — Latency 93.9 ms — acceptable
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | Validation complete: 4/4 checks passed
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | Starting full hardware validation sweep
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] CPU — CPU at 27.9% — within limit
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] RAM — 7.3 GB available — sufficient
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] Disk — 198.4 GB free on '/' — OK
+2026-05-11T10:21:01 | WARNING  | src.hardware_monitor | [FAIL] Network — Latency 100.3 ms — exceeds 100.0 ms limit
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | Validation complete: 3/4 checks passed
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | Starting full hardware validation sweep
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] CPU — CPU at 64.8% — within limit
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] RAM — 5.7 GB available — sufficient
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] Disk — 198.4 GB free on '/' — OK
+2026-05-11T10:21:01 | WARNING  | src.hardware_monitor | [FAIL] Network — Latency 146.7 ms — exceeds 100.0 ms limit
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | Validation complete: 3/4 checks passed
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | Starting full hardware validation sweep
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] CPU — CPU at 45.5% — within limit
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] RAM — 8.6 GB available — sufficient
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] Disk — 198.4 GB free on '/' — OK
+2026-05-11T10:21:01 | WARNING  | src.hardware_monitor | [FAIL] Network — Latency 115.2 ms — exceeds 100.0 ms limit
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | Validation complete: 3/4 checks passed
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | Starting full hardware validation sweep
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] CPU — CPU at 55.8% — within limit
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] RAM — 2.6 GB available — sufficient
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] Disk — 198.4 GB free on '/' — OK
+2026-05-11T10:21:01 | WARNING  | src.hardware_monitor | [FAIL] Network — Latency 115.9 ms — exceeds 100.0 ms limit
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | Validation complete: 3/4 checks passed
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 10.0}
+2026-05-11T10:21:01 | WARNING  | src.hardware_monitor | [FAIL] CPU — CPU at 15.0% — exceeds 10.0% threshold
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'min_memory_available_gb': 0.1}
+2026-05-11T10:21:01 | INFO     | src.hardware_monitor | [PASS] RAM — 0.5 GB available — sufficient
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | [PASS] sequential_throughput — Throughput 350.0 MB/s — meets 200.0 MB/s minimum
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] sequential_throughput — Throughput 80.0 MB/s — below minimum (framework_issue) | defect_type=framework_issue
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] sequential_throughput — Throughput 10.0 MB/s — below minimum (hardware_defect) | defect_type=hardware_defect
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] sequential_throughput — Throughput 100.0 MB/s — below minimum (framework_issue) | defect_type=framework_issue
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | [PASS] sequential_throughput — Throughput 2598.2 MB/s — meets 200.0 MB/s minimum
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] random_4k_iops — 4999 IOPS — below 5000 (likely hardware_defect) | defect_type=hardware_defect
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | [PASS] random_4k_iops — 5000 IOPS — meets 5000 minimum
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | [PASS] random_4k_iops — 10000 IOPS — meets 5000 minimum
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] random_4k_iops — 100 IOPS — below 5000 (likely hardware_defect) | defect_type=hardware_defect
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | [PASS] write_latency — Write latency 100 µs — within spec
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 600 µs — exceeds 500 µs (framework_issue) | defect_type=framework_issue
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 3000 µs — exceeds 500 µs (hardware_defect) | defect_type=hardware_defect
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 800 µs — exceeds 500 µs (framework_issue) | defect_type=framework_issue
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 2091 µs — exceeds 500 µs (hardware_defect) | defect_type=hardware_defect
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | smartctl unavailable — marking as framework_issue
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] smart_health — smartctl not found — install smartmontools to enable SMART checks | defect_type=framework_issue
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | [PASS] smart_health — SMART reports PASSED
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] smart_health — SMART reports FAILED — hardware defect | defect_type=hardware_defect
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | smartctl unavailable — marking as framework_issue
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] smart_health — smartctl not found — install smartmontools to enable SMART checks | defect_type=framework_issue
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | Starting SSD validation suite
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | [PASS] sequential_throughput — Throughput 1109.0 MB/s — meets 200.0 MB/s minimum
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | [PASS] random_4k_iops — 7354 IOPS — meets 5000 minimum
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 2183 µs — exceeds 500 µs (hardware_defect) | defect_type=hardware_defect
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | smartctl unavailable — marking as framework_issue
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] smart_health — smartctl not found — install smartmontools to enable SMART checks | defect_type=framework_issue
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSD validation complete: 2/4 checks passed
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | Starting SSD validation suite
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | [PASS] sequential_throughput — Throughput 1471.6 MB/s — meets 200.0 MB/s minimum
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | [PASS] random_4k_iops — 7916 IOPS — meets 5000 minimum
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 1367 µs — exceeds 500 µs (framework_issue) | defect_type=framework_issue
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | smartctl unavailable — marking as framework_issue
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] smart_health — smartctl not found — install smartmontools to enable SMART checks | defect_type=framework_issue
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSD validation complete: 2/4 checks passed
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | Starting SSD validation suite
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | [PASS] sequential_throughput — Throughput 1245.5 MB/s — meets 200.0 MB/s minimum
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | [PASS] random_4k_iops — 12406 IOPS — meets 5000 minimum
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 1739 µs — exceeds 500 µs (framework_issue) | defect_type=framework_issue
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | smartctl unavailable — marking as framework_issue
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] smart_health — smartctl not found — install smartmontools to enable SMART checks | defect_type=framework_issue
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSD validation complete: 2/4 checks passed
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | Starting SSD validation suite
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | [PASS] sequential_throughput — Throughput 1306.8 MB/s — meets 200.0 MB/s minimum
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] random_4k_iops — 3591 IOPS — below 5000 (likely hardware_defect) | defect_type=hardware_defect
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 1434 µs — exceeds 500 µs (framework_issue) | defect_type=framework_issue
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | smartctl unavailable — marking as framework_issue
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] smart_health — smartctl not found — install smartmontools to enable SMART checks | defect_type=framework_issue
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSD validation complete: 1/4 checks passed
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | Starting SSD validation suite
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | [PASS] sequential_throughput — Throughput 1856.5 MB/s — meets 200.0 MB/s minimum
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | [PASS] random_4k_iops — 11314 IOPS — meets 5000 minimum
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 1458 µs — exceeds 500 µs (framework_issue) | defect_type=framework_issue
+2026-05-11T10:21:01 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | smartctl unavailable — marking as framework_issue
+2026-05-11T10:21:01 | WARNING  | src.ssd_validator | [FAIL] smart_health — smartctl not found — install smartmontools to enable SMART checks | defect_type=framework_issue
+2026-05-11T10:21:01 | INFO     | src.ssd_validator | SSD validation complete: 2/4 checks passed
+2026-05-11T10:21:23 | WARNING  | src.framework_runner | Config file not found at 'C:\Users\shanm\AppData\Local\Temp\pytest-of-shanm\pytest-1\test_returns_defaults_when_no_0\nonexistent.yaml' — using defaults
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Config loaded from C:\Users\shanm\AppData\Local\Temp\pytest-of-shanm\pytest-1\test_user_values_override_defa0\config.yaml
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Config loaded from C:\Users\shanm\AppData\Local\Temp\pytest-of-shanm\pytest-1\test_bad_yaml_falls_back_to_de0\bad.yaml
+2026-05-11T10:21:23 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:23 | INFO     | src.framework_runner | HW-Validation-Suite starting
+2026-05-11T10:21:23 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Running HardwareMonitor (attempt 1)
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Running SSDValidator (attempt 1)
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Suite finished in 0.00 s | 8 passed | 0 failed
+2026-05-11T10:21:23 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:23 | INFO     | src.framework_runner | HW-Validation-Suite starting
+2026-05-11T10:21:23 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Running HardwareMonitor (attempt 1)
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Running SSDValidator (attempt 1)
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Suite finished in 0.00 s | 0 passed | 8 failed
+2026-05-11T10:21:23 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:23 | INFO     | src.framework_runner | HW-Validation-Suite starting
+2026-05-11T10:21:23 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Running HardwareMonitor (attempt 1)
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Running SSDValidator (attempt 1)
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Suite finished in 0.00 s | 8 passed | 0 failed
+2026-05-11T10:21:23 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:23 | INFO     | src.framework_runner | HW-Validation-Suite starting
+2026-05-11T10:21:23 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Running HardwareMonitor (attempt 1)
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Running SSDValidator (attempt 1)
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Suite finished in 0.00 s | 8 passed | 0 failed
+2026-05-11T10:21:23 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:23 | INFO     | src.framework_runner | HW-Validation-Suite starting
+2026-05-11T10:21:23 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Running HardwareMonitor (attempt 1)
+2026-05-11T10:21:23 | ERROR    | src.framework_runner | HardwareMonitor attempt 1 failed: transient error
+Traceback (most recent call last):
+  File "C:\Projects\hw_validation_project\hw-validation-suite\src\framework_runner.py", line 106, in _run_with_retry
+    return fn()
+           ^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1199, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\hw_validation_project\hw-validation-suite\tests\test_framework_runner.py", line 135, in flaky_run
+    raise RuntimeError("transient error")
+RuntimeError: transient error
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Retrying in 0 s…
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Running HardwareMonitor (attempt 2)
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Running SSDValidator (attempt 1)
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Suite finished in 0.01 s | 8 passed | 0 failed
+2026-05-11T10:21:23 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:23 | INFO     | src.framework_runner | HW-Validation-Suite starting
+2026-05-11T10:21:23 | INFO     | src.framework_runner | ============================================================
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Running HardwareMonitor (attempt 1)
+2026-05-11T10:21:23 | ERROR    | src.framework_runner | HardwareMonitor attempt 1 failed: always fails
+Traceback (most recent call last):
+  File "C:\Projects\hw_validation_project\hw-validation-suite\src\framework_runner.py", line 106, in _run_with_retry
+    return fn()
+           ^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1193, in _execute_mock_call
+    raise effect
+RuntimeError: always fails
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Retrying in 0 s…
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Running HardwareMonitor (attempt 2)
+2026-05-11T10:21:23 | ERROR    | src.framework_runner | HardwareMonitor attempt 2 failed: always fails
+Traceback (most recent call last):
+  File "C:\Projects\hw_validation_project\hw-validation-suite\src\framework_runner.py", line 106, in _run_with_retry
+    return fn()
+           ^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1193, in _execute_mock_call
+    raise effect
+  File "C:\Projects\hw_validation_project\hw-validation-suite\src\framework_runner.py", line 106, in _run_with_retry
+    return fn()
+           ^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shanm\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py", line 1193, in _execute_mock_call
+    raise effect
+RuntimeError: always fails
+2026-05-11T10:21:23 | CRITICAL | src.framework_runner | HardwareMonitor exhausted all retries — skipping
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Running SSDValidator (attempt 1)
+2026-05-11T10:21:23 | INFO     | src.framework_runner | Suite finished in 0.01 s | 4 passed | 0 failed
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] CPU — CPU at 50.0% — within limit
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | WARNING  | src.hardware_monitor | [FAIL] CPU — CPU at 90.0% — exceeds 85.0% threshold
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | WARNING  | src.hardware_monitor | [FAIL] CPU — CPU at 85.0% — exceeds 85.0% threshold
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] CPU — CPU at 0.0% — within limit
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] CPU — CPU at 84.9% — within limit
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | WARNING  | src.hardware_monitor | [FAIL] CPU — CPU at 85.0% — exceeds 85.0% threshold
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | WARNING  | src.hardware_monitor | [FAIL] CPU — CPU at 100.0% — exceeds 85.0% threshold
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] RAM — 8.0 GB available — sufficient
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | WARNING  | src.hardware_monitor | [FAIL] RAM — Only 0.5 GB available — below 2.0 GB minimum
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | WARNING  | src.hardware_monitor | [FAIL] RAM — Only 0.0 GB available — below 2.0 GB minimum
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | WARNING  | src.hardware_monitor | [FAIL] RAM — Only 1.9 GB available — below 2.0 GB minimum
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] RAM — 2.0 GB available — sufficient
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] RAM — 16.0 GB available — sufficient
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] Disk — 198.4 GB free on '/' — OK
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | WARNING  | src.hardware_monitor | [FAIL] Disk — Only 2.0 GB free on '/' — below 10.0 GB
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] Network — Latency 20.0 ms — acceptable
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | WARNING  | src.hardware_monitor | [FAIL] Network — Latency 200.0 ms — exceeds 100.0 ms limit
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] Network — Latency 10.0 ms — acceptable
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] Network — Latency 99.9 ms — acceptable
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] Network — Latency 100.0 ms — acceptable
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | WARNING  | src.hardware_monitor | [FAIL] Network — Latency 100.1 ms — exceeds 100.0 ms limit
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | WARNING  | src.hardware_monitor | [FAIL] Network — Latency 500.0 ms — exceeds 100.0 ms limit
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | Starting full hardware validation sweep
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] CPU — CPU at 56.7% — within limit
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] RAM — 14.9 GB available — sufficient
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] Disk — 198.4 GB free on '/' — OK
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] Network — Latency 7.5 ms — acceptable
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | Validation complete: 4/4 checks passed
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | Starting full hardware validation sweep
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] CPU — CPU at 66.2% — within limit
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] RAM — 4.5 GB available — sufficient
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] Disk — 198.4 GB free on '/' — OK
+2026-05-11T10:21:23 | WARNING  | src.hardware_monitor | [FAIL] Network — Latency 147.2 ms — exceeds 100.0 ms limit
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | Validation complete: 3/4 checks passed
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | Starting full hardware validation sweep
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] CPU — CPU at 68.6% — within limit
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] RAM — 9.4 GB available — sufficient
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] Disk — 198.4 GB free on '/' — OK
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] Network — Latency 45.0 ms — acceptable
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | Validation complete: 4/4 checks passed
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | Starting full hardware validation sweep
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] CPU — CPU at 81.0% — within limit
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] RAM — 13.0 GB available — sufficient
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] Disk — 198.4 GB free on '/' — OK
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] Network — Latency 11.8 ms — acceptable
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | Validation complete: 4/4 checks passed
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | Starting full hardware validation sweep
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] CPU — CPU at 31.5% — within limit
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] RAM — 15.0 GB available — sufficient
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] Disk — 198.4 GB free on '/' — OK
+2026-05-11T10:21:23 | WARNING  | src.hardware_monitor | [FAIL] Network — Latency 125.0 ms — exceeds 100.0 ms limit
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | Validation complete: 3/4 checks passed
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0}
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | Starting full hardware validation sweep
+2026-05-11T10:21:23 | WARNING  | src.hardware_monitor | [FAIL] CPU — CPU at 89.5% — exceeds 85.0% threshold
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] RAM — 5.4 GB available — sufficient
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] Disk — 198.4 GB free on '/' — OK
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] Network — Latency 85.0 ms — acceptable
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | Validation complete: 3/4 checks passed
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 10.0}
+2026-05-11T10:21:23 | WARNING  | src.hardware_monitor | [FAIL] CPU — CPU at 15.0% — exceeds 10.0% threshold
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'min_memory_available_gb': 0.1}
+2026-05-11T10:21:23 | INFO     | src.hardware_monitor | [PASS] RAM — 0.5 GB available — sufficient
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | [PASS] sequential_throughput — Throughput 350.0 MB/s — meets 200.0 MB/s minimum
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] sequential_throughput — Throughput 80.0 MB/s — below minimum (framework_issue) | defect_type=framework_issue
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] sequential_throughput — Throughput 10.0 MB/s — below minimum (hardware_defect) | defect_type=hardware_defect
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] sequential_throughput — Throughput 100.0 MB/s — below minimum (framework_issue) | defect_type=framework_issue
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | [PASS] sequential_throughput — Throughput 1725.0 MB/s — meets 200.0 MB/s minimum
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] random_4k_iops — 4999 IOPS — below 5000 (likely hardware_defect) | defect_type=hardware_defect
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | [PASS] random_4k_iops — 5000 IOPS — meets 5000 minimum
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | [PASS] random_4k_iops — 10000 IOPS — meets 5000 minimum
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] random_4k_iops — 100 IOPS — below 5000 (likely hardware_defect) | defect_type=hardware_defect
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | [PASS] write_latency — Write latency 100 µs — within spec
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 600 µs — exceeds 500 µs (framework_issue) | defect_type=framework_issue
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 3000 µs — exceeds 500 µs (hardware_defect) | defect_type=hardware_defect
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 800 µs — exceeds 500 µs (framework_issue) | defect_type=framework_issue
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 3355 µs — exceeds 500 µs (hardware_defect) | defect_type=hardware_defect
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | smartctl unavailable — marking as framework_issue
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] smart_health — smartctl not found — install smartmontools to enable SMART checks | defect_type=framework_issue
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | [PASS] smart_health — SMART reports PASSED
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] smart_health — SMART reports FAILED — hardware defect | defect_type=hardware_defect
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | smartctl unavailable — marking as framework_issue
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] smart_health — smartctl not found — install smartmontools to enable SMART checks | defect_type=framework_issue
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | Starting SSD validation suite
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | [PASS] sequential_throughput — Throughput 2726.8 MB/s — meets 200.0 MB/s minimum
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | [PASS] random_4k_iops — 7411 IOPS — meets 5000 minimum
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 1982 µs — exceeds 500 µs (framework_issue) | defect_type=framework_issue
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | smartctl unavailable — marking as framework_issue
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] smart_health — smartctl not found — install smartmontools to enable SMART checks | defect_type=framework_issue
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSD validation complete: 2/4 checks passed
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | Starting SSD validation suite
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | [PASS] sequential_throughput — Throughput 3004.4 MB/s — meets 200.0 MB/s minimum
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | [PASS] random_4k_iops — 14203 IOPS — meets 5000 minimum
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 1581 µs — exceeds 500 µs (framework_issue) | defect_type=framework_issue
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | smartctl unavailable — marking as framework_issue
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] smart_health — smartctl not found — install smartmontools to enable SMART checks | defect_type=framework_issue
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSD validation complete: 2/4 checks passed
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | Starting SSD validation suite
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | [PASS] sequential_throughput — Throughput 3014.5 MB/s — meets 200.0 MB/s minimum
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | [PASS] random_4k_iops — 8020 IOPS — meets 5000 minimum
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 1754 µs — exceeds 500 µs (framework_issue) | defect_type=framework_issue
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | smartctl unavailable — marking as framework_issue
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] smart_health — smartctl not found — install smartmontools to enable SMART checks | defect_type=framework_issue
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSD validation complete: 2/4 checks passed
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | Starting SSD validation suite
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | [PASS] sequential_throughput — Throughput 2288.2 MB/s — meets 200.0 MB/s minimum
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | [PASS] random_4k_iops — 6086 IOPS — meets 5000 minimum
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 1578 µs — exceeds 500 µs (framework_issue) | defect_type=framework_issue
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | smartctl unavailable — marking as framework_issue
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] smart_health — smartctl not found — install smartmontools to enable SMART checks | defect_type=framework_issue
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSD validation complete: 2/4 checks passed
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | Starting SSD validation suite
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=4 MB)
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | [PASS] sequential_throughput — Throughput 1739.6 MB/s — meets 200.0 MB/s minimum
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] random_4k_iops — 2479 IOPS — below 5000 (likely hardware_defect) | defect_type=hardware_defect
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 1435 µs — exceeds 500 µs (framework_issue) | defect_type=framework_issue
+2026-05-11T10:21:23 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | smartctl unavailable — marking as framework_issue
+2026-05-11T10:21:23 | WARNING  | src.ssd_validator | [FAIL] smart_health — smartctl not found — install smartmontools to enable SMART checks | defect_type=framework_issue
+2026-05-11T10:21:23 | INFO     | src.ssd_validator | SSD validation complete: 1/4 checks passed
+2026-05-11T10:22:09 | INFO     | __main__ | Config loaded from config.yaml
+2026-05-11T10:22:09 | INFO     | __main__ | ============================================================
+2026-05-11T10:22:09 | INFO     | __main__ | HW-Validation-Suite starting
+2026-05-11T10:22:09 | INFO     | __main__ | ============================================================
+2026-05-11T10:22:09 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 85.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0, 'min_sequential_throughput_mbs': 200.0, 'throughput_block_size_mb': 64, 'min_random_iops': 5000, 'max_write_latency_us': 500, 'max_retries': 2, 'retry_delay_seconds': 1}
+2026-05-11T10:22:09 | INFO     | __main__ | Running HardwareMonitor (attempt 1)
+2026-05-11T10:22:09 | INFO     | src.hardware_monitor | Starting full hardware validation sweep
+2026-05-11T10:22:09 | INFO     | src.hardware_monitor | [PASS] CPU — CPU at 37.8% — within limit
+2026-05-11T10:22:09 | INFO     | src.hardware_monitor | [PASS] RAM — 11.5 GB available — sufficient
+2026-05-11T10:22:09 | INFO     | src.hardware_monitor | [PASS] Disk — 198.4 GB free on '/' — OK
+2026-05-11T10:22:09 | INFO     | src.hardware_monitor | [PASS] Network — Latency 44.1 ms — acceptable
+2026-05-11T10:22:09 | INFO     | src.hardware_monitor | Validation complete: 4/4 checks passed
+2026-05-11T10:22:09 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:22:09 | INFO     | __main__ | Running SSDValidator (attempt 1)
+2026-05-11T10:22:09 | INFO     | src.ssd_validator | Starting SSD validation suite
+2026-05-11T10:22:09 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=64 MB)
+2026-05-11T10:22:09 | INFO     | src.ssd_validator | [PASS] sequential_throughput — Throughput 1007.7 MB/s — meets 200.0 MB/s minimum
+2026-05-11T10:22:09 | INFO     | src.ssd_validator | [PASS] random_4k_iops — 13423 IOPS — meets 5000 minimum
+2026-05-11T10:22:09 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 1161 µs — exceeds 500 µs (framework_issue) | defect_type=framework_issue
+2026-05-11T10:22:09 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:22:09 | WARNING  | src.ssd_validator | smartctl unavailable — marking as framework_issue
+2026-05-11T10:22:09 | WARNING  | src.ssd_validator | [FAIL] smart_health — smartctl not found — install smartmontools to enable SMART checks | defect_type=framework_issue
+2026-05-11T10:22:09 | INFO     | src.ssd_validator | SSD validation complete: 2/4 checks passed
+2026-05-11T10:22:09 | INFO     | __main__ | Suite finished in 0.09 s | 6 passed | 2 failed
+2026-05-11T10:22:09 | INFO     | src.report_generator | CSV report written: C:\Projects\hw_validation_project\hw-validation-suite\src\..\reports\report_20260511_102209.csv
+2026-05-11T10:22:09 | INFO     | src.report_generator | HTML report written: C:\Projects\hw_validation_project\hw-validation-suite\src\..\reports\report_20260511_102209.html
+2026-05-11T10:26:16 | INFO     | __main__ | Config loaded from config.yaml
+2026-05-11T10:26:16 | INFO     | __main__ | ============================================================
+2026-05-11T10:26:16 | INFO     | __main__ | HW-Validation-Suite starting
+2026-05-11T10:26:16 | INFO     | __main__ | ============================================================
+2026-05-11T10:26:16 | INFO     | src.hardware_monitor | HardwareMonitor initialised with config: {'cpu_threshold_percent': 1.0, 'min_memory_available_gb': 2.0, 'min_disk_free_gb': 10.0, 'max_network_latency_ms': 100.0, 'min_sequential_throughput_mbs': 200.0, 'throughput_block_size_mb': 64, 'min_random_iops': 5000, 'max_write_latency_us': 500, 'max_retries': 2, 'retry_delay_seconds': 1}
+2026-05-11T10:26:16 | INFO     | __main__ | Running HardwareMonitor (attempt 1)
+2026-05-11T10:26:16 | INFO     | src.hardware_monitor | Starting full hardware validation sweep
+2026-05-11T10:26:16 | WARNING  | src.hardware_monitor | [FAIL] CPU — CPU at 20.5% — exceeds 1.0% threshold
+2026-05-11T10:26:16 | INFO     | src.hardware_monitor | [PASS] RAM — 14.1 GB available — sufficient
+2026-05-11T10:26:16 | INFO     | src.hardware_monitor | [PASS] Disk — 198.4 GB free on '/' — OK
+2026-05-11T10:26:16 | INFO     | src.hardware_monitor | [PASS] Network — Latency 69.2 ms — acceptable
+2026-05-11T10:26:16 | INFO     | src.hardware_monitor | Validation complete: 3/4 checks passed
+2026-05-11T10:26:16 | INFO     | src.ssd_validator | SSDValidator initialised for device: /dev/sda
+2026-05-11T10:26:16 | INFO     | __main__ | Running SSDValidator (attempt 1)
+2026-05-11T10:26:16 | INFO     | src.ssd_validator | Starting SSD validation suite
+2026-05-11T10:26:16 | DEBUG    | src.ssd_validator | Running sequential throughput test (block=64 MB)
+2026-05-11T10:26:16 | INFO     | src.ssd_validator | [PASS] sequential_throughput — Throughput 684.4 MB/s — meets 200.0 MB/s minimum
+2026-05-11T10:26:16 | INFO     | src.ssd_validator | [PASS] random_4k_iops — 8861 IOPS — meets 5000 minimum
+2026-05-11T10:26:16 | WARNING  | src.ssd_validator | [FAIL] write_latency — Write latency 2244 µs — exceeds 500 µs (hardware_defect) | defect_type=hardware_defect
+2026-05-11T10:26:16 | DEBUG    | src.ssd_validator | Querying SMART health for /dev/sda
+2026-05-11T10:26:16 | WARNING  | src.ssd_validator | smartctl unavailable — marking as framework_issue
+2026-05-11T10:26:16 | WARNING  | src.ssd_validator | [FAIL] smart_health — smartctl not found — install smartmontools to enable SMART checks | defect_type=framework_issue
+2026-05-11T10:26:16 | INFO     | src.ssd_validator | SSD validation complete: 2/4 checks passed
+2026-05-11T10:26:16 | INFO     | __main__ | Suite finished in 0.13 s | 5 passed | 3 failed
+2026-05-11T10:26:16 | INFO     | src.report_generator | CSV report written: C:\Projects\hw_validation_project\hw-validation-suite\src\..\reports\report_20260511_102616.csv
+2026-05-11T10:26:16 | INFO     | src.report_generator | HTML report written: C:\Projects\hw_validation_project\hw-validation-suite\src\..\reports\report_20260511_102616.html
