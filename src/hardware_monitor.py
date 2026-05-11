@@ -6,12 +6,10 @@ Covers: server-level automation, system-level hardware validation workflows,
         Python automation frameworks, and debug logging.
 """
 
-import platform
 import time
 import random
 import shutil
 from dataclasses import dataclass, field
-from typing import Optional
 from src.logger import get_logger
 
 logger = get_logger(__name__)

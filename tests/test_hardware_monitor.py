@@ -6,7 +6,7 @@ Demonstrates: fixture usage, parametrize, mocking, edge-case coverage.
 """
 
 import pytest
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch
 from src.hardware_monitor import HardwareMonitor, CheckResult
 
 

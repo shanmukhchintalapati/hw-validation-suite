@@ -7,9 +7,7 @@ Covers: automation documentation, reporting, continuous improvement metrics.
 
 import csv
 import os
-import time
 from datetime import datetime
-from typing import Union
 from src.logger import get_logger
 
 logger = get_logger(__name__)
