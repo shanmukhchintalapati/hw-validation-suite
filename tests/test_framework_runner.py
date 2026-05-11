@@ -5,13 +5,10 @@ Integration tests for the framework orchestration layer.
 Covers: retry logic, config loading, report generation, summary accuracy.
 """
 
-import os
-import pytest
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch
 from src.framework_runner import run_suite, load_config, DEFAULT_CONFIG
 from src.hardware_monitor import CheckResult
 from src.ssd_validator import SSDCheckResult
-import time
 
 
 # ──────────────────────────────────────────────
@@ -44,22 +41,22 @@ class TestLoadConfig:
 # ──────────────────────────────────────────────
 
 def _make_fake_hw_results(passed: bool):
-    import time
+    import time as _time
     return [
-        CheckResult("CPU", "utilisation", 50.0, "%", 85.0, passed, "ok", time.time()),
-        CheckResult("RAM", "available", 4.0, "GB", 2.0, passed, "ok", time.time()),
-        CheckResult("Disk", "free_space", 20.0, "GB", 10.0, passed, "ok", time.time()),
-        CheckResult("Network", "latency", 30.0, "ms", 100.0, passed, "ok", time.time()),
+        CheckResult("CPU", "utilisation", 50.0, "%", 85.0, passed, "ok", _time.time()),
+        CheckResult("RAM", "available", 4.0, "GB", 2.0, passed, "ok", _time.time()),
+        CheckResult("Disk", "free_space", 20.0, "GB", 10.0, passed, "ok", _time.time()),
+        CheckResult("Network", "latency", 30.0, "ms", 100.0, passed, "ok", _time.time()),
     ]
 
 
 def _make_fake_ssd_results(passed: bool):
-    import time
+    import time as _time
     return [
-        SSDCheckResult("sequential_throughput", 300.0, "MB/s", 200.0, passed, "none", "ok", time.time()),
-        SSDCheckResult("random_4k_iops", 8000.0, "IOPS", 5000.0, passed, "none", "ok", time.time()),
-        SSDCheckResult("write_latency", 100.0, "µs", 500.0, passed, "none", "ok", time.time()),
-        SSDCheckResult("smart_health", 1.0, "status", 1.0, passed, "none", "ok", time.time()),
+        SSDCheckResult("sequential_throughput", 300.0, "MB/s", 200.0, passed, "none", "ok", _time.time()),
+        SSDCheckResult("random_4k_iops", 8000.0, "IOPS", 5000.0, passed, "none", "ok", _time.time()),
+        SSDCheckResult("write_latency", 100.0, "µs", 500.0, passed, "none", "ok", _time.time()),
+        SSDCheckResult("smart_health", 1.0, "status", 1.0, passed, "none", "ok", _time.time()),
     ]
 
 
@@ -144,7 +141,7 @@ class TestRetryLogic:
             MockHW.return_value.run_all.side_effect = flaky_run
             MockSSD.return_value.run_all.return_value = _make_fake_ssd_results(True)
 
-            summary = run_suite({**DEFAULT_CONFIG, "max_retries": 2, "retry_delay_seconds": 0})
+            run_suite({**DEFAULT_CONFIG, "max_retries": 2, "retry_delay_seconds": 0})
 
         assert call_count["n"] == 2
 
