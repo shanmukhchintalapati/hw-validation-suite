@@ -177,7 +177,7 @@ class HardwareMonitor:
             after = psutil.net_io_counters()
             bytes_delta = (
                 (after.bytes_sent - before.bytes_sent)
-                (after.bytes_recv - before.bytes_recv)
+                + (after.bytes_recv - before.bytes_recv)
             )
             bandwidth_mbs = round((bytes_delta / (1024 ** 2)) / max(sample_interval, 0.001), 3)
             source = "real"
