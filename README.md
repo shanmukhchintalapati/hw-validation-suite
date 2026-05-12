@@ -2,23 +2,23 @@
 
 A production-style Python automation framework for hardware and SSD validation, built as a portfolio project demonstrating skills for the **Python + Networking Engineer** role.
 
-![CI](https://github.com/shanmukhchintalapati/hw-validation-suite/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/YOUR_USERNAME/hw-validation-suite/actions/workflows/ci.yml/badge.svg)
 
 ---
 
 ## What This Project Covers
 
-| Industry Validation Standard | Where It's Demonstrated |
+| Job Requirement | Where It's Demonstrated |
 |---|---|
-| Hardware validation automation framework | `framework_runner.py` — orchestrates all validators with retry logic |
-| Automated test case design and execution | `tests/` — 60 pytest tests with fixtures, mocks, parametrize |
-| Python automation framework development | `HardwareMonitor` + `SSDValidator` — modular, config-driven |
-| System-level hardware integration | Real `shutil.disk_usage`, `os.fsync`, `subprocess` for SMART |
-| Debug and defect classification | `defect_type` field in every SSD result (`framework_issue` / `hardware_defect`) |
-| Server memory and storage validation | CPU, RAM, Disk, Network, SSD throughput, IOPS, latency, SMART |
-| Automation documentation and user guides | This README + `USERGUIDE.md` |
-| Test coverage and continuous reporting | HTML + CSV reports, GitHub Actions CI with coverage |
-| Cross-platform scripting | `bootstrap.ps1` — PowerShell setup script |
+| Maintain hardware validation automation framework | `framework_runner.py` — orchestrates all validators with retry logic |
+| Design and execute automated test cases | `tests/` — 60 pytest tests with fixtures, mocks, parametrize |
+| Enhance Python automation frameworks | `HardwareMonitor` + `SSDValidator` — modular, config-driven |
+| Integrate automation with system-level hardware validation | Real `shutil.disk_usage`, `os.fsync`, `subprocess` for SMART |
+| Debug and distinguish framework vs hardware defects | `defect_type` field in every SSD result (`framework_issue` / `hardware_defect`) |
+| Automate validation for server systems including memory and storage | CPU, RAM, Disk, Network, SSD throughput, IOPS, latency, SMART |
+| Create and maintain automation documentation and user guides | This README + `USERGUIDE.md` |
+| Support continuous improvement of test coverage and reporting | HTML + CSV reports, GitHub Actions CI with coverage |
+| PowerShell scripting (good to have) | `bootstrap.ps1` — cross-platform setup script |
 
 ---
 
@@ -56,7 +56,7 @@ hw-validation-suite/
 ### Install
 
 ```bash
-git clone https://github.com/shanmukhchintalapati/hw-validation-suite.git
+git clone https://github.com/YOUR_USERNAME/hw-validation-suite.git
 cd hw-validation-suite
 pip install -r requirements.txt
 ```
