@@ -1,9 +1,10 @@
 # hw-validation-suite — configuration
 # ------------------------------------
-# All thresholds are validated at runtime. See README.md for full docs.
+# All thresholds validated at runtime. See README.md for full docs.
 
 # CPU
-cpu_threshold_percent: 1.0        # fail if CPU utilisation exceeds this
+cpu_threshold_percent: 85.0        # fail if CPU utilisation exceeds this
+max_cpu_temp_celsius: 80.0         # fail if CPU temperature exceeds this (°C)
 
 # Memory
 min_memory_available_gb: 2.0       # fail if available RAM drops below this
@@ -11,8 +12,19 @@ min_memory_available_gb: 2.0       # fail if available RAM drops below this
 # Disk
 min_disk_free_gb: 10.0             # fail if free disk space drops below this
 
-# Network
-max_network_latency_ms: 100.0      # fail if round-trip latency exceeds this
+# Network — latency
+max_network_latency_ms: 100.0      # fail if TCP latency exceeds this
+latency_check_host: "8.8.8.8"     # host to measure latency against
+latency_check_port: 53             # port to connect to (DNS)
+
+# Network — bandwidth
+min_network_bandwidth_mbs: 0.1     # fail if combined throughput below this
+bandwidth_sample_seconds: 1        # how long to sample network counters
+
+# Network — packet loss
+max_packet_loss_pct: 5.0           # fail if packet loss exceeds this %
+ping_host: "8.8.8.8"              # host to ping for packet loss test
+ping_count: 10                     # number of pings to send
 
 # SSD / Storage
 min_sequential_throughput_mbs: 200.0   # minimum acceptable write throughput
