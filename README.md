@@ -28,6 +28,7 @@ built as a portfolio project demonstrating skills for hardware validation engine
 ---
 
 ## Project Structure
+```
 hw-validation-suite/
 ├── src/
 │   ├── hardware_monitor.py    # CPU, RAM, Disk, Network latency, Bandwidth, Packet loss, Temperature
@@ -51,8 +52,7 @@ hw-validation-suite/
 ├── config.yaml                # All thresholds, configurable
 ├── bootstrap.ps1              # PowerShell setup script
 └── requirements.txt
-
----
+```
 
 ## Quick Start
 
@@ -152,6 +152,7 @@ alert_recipients: ["team@company.com"]
 ---
 
 ## Architecture
+```
 config.yaml
 │
 ▼
@@ -166,7 +167,7 @@ framework_runner.py
 ├──► database.py           ──► reports/validation_history.db
 ├──► alert.py              ──► email (if hardware_defect found)
 └──► dashboard.py          ──► reports/dashboard.html
-
+```
 ---
 
 ## Defect Classification
