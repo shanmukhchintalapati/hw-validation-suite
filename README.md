@@ -224,10 +224,11 @@ Set `SMTP_PASSWORD` as an environment variable — never hardcode credentials.
 ## Logging
 
 Logs are written to `logs/hw_validation.log` with automatic rotation (5 MB × 3 backups).
+```
 2026-05-12T10:22:01 | INFO     | src.hardware_monitor | [PASS] CPU.utilisation — CPU at 37.8% [real] — within limit
 2026-05-12T10:22:02 | WARNING  | src.ssd_validator    | [FAIL] write_latency — 1161 µs exceeds 500 µs (hardware_defect)
 2026-05-12T10:22:02 | WARNING  | src.ssd_validator    | smartctl unavailable — marking as framework_issue
-
+```
 To switch to JSON format for log aggregation pipelines:
 ```python
 get_logger(__name__, use_json=True)
